@@ -14,7 +14,8 @@ docker run -d \
   --restart always \
   elclavel/dockstat:latest
 
-### Usage - Docker Compose
+##
+## Usage - Docker Compose
 
 ```bash
 services:
