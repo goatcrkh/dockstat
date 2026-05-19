@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 # Install lightweight dependencies required for parsing
-RUN apk add --no-cache docker-cli python3 bash
+RUN apk add --no-cache curl docker-cli python3 bash
 
 WORKDIR /app
 
