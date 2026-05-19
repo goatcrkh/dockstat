@@ -2,7 +2,7 @@
 
 A lightweight Docker container that counts your containers (Total, Running, Stopped) and exports them as a JSON file for dashboards like **Homepage**, or other custom APIs.
 
-##  Usage
+##  Usage Docker Run
 
 ```bash
 docker run -d \
@@ -15,7 +15,7 @@ docker run -d \
   elclavel/dockstat:latest
 ```
 
-### Usage - Docker Compose
+## Usage - Docker Compose
 ```
 services:
   dockstat:
