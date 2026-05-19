@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 # Install lightweight dependencies required for parsing
-RUN apk add --no-cache curl grep
+RUN apk add --no-cache docker-cli python3 bash
 
 WORKDIR /app
 
@@ -10,8 +10,10 @@ COPY entrypoint.sh .
 RUN chmod +x entrypoint.sh
 
 # Define default environment variables for international deployment
-ENV CHECK_INTERVAL=300
-ENV OUTPUT_PATH=/app/index.json
+ENV CHECK_INTERVAL=60
+
+# API Port
+EXPOSE 8080
 
 # Define the container startup command
 ENTRYPOINT ["./entrypoint.sh"]
