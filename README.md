@@ -13,9 +13,10 @@ docker run -d \
   -v /your/dashboard/config:/config \
   --restart always \
   elclavel/dockstat:latest
+```
 
 ### Usage - Docker Compose
-
+```
 services:
   dockstat:
     # The official Docker image you built and pushed to Docker Hub
@@ -38,3 +39,4 @@ services:
       # REQUIRED: Change the host path (left side) to your Dashboard's config directory
       # This allows your Homepage dashboard to read the generated JSON file
       - /opt/stacks/homepage/config:/config
+```
