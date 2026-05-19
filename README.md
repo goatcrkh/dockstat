@@ -14,10 +14,8 @@ docker run -d \
   --restart always \
   elclavel/dockstat:latest
 
-##
-## Usage - Docker Compose
+### Usage - Docker Compose
 
-```bash
 services:
   dockstat:
     # The official Docker image you built and pushed to Docker Hub
