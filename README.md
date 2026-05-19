@@ -20,7 +20,7 @@ docker run -d \
 services:
   dockstat:
     # The official Docker image you built and pushed to Docker Hub
-    image: goatcrkh/dockstat:latest
+    image: elclavel/dockstat:latest
     container_name: dockstat
     restart: always
 
